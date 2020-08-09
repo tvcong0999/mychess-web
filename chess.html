@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="chess.css">
+    <script src="chess.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="board">
+        <!-- row 1 -->
+        <div class="square_while a1" onclick = "run(this)">
+            <img src="castle_b.png" alt="">
+        </div>
+        <div class="square_black b1" onclick = "run(this)">
+            <img src="horse_b.png" alt="">
+        </div>
+        <div class="square_while c1" onclick = "run(this)">
+            <img src="bishop_b.png" alt="">
+        </div>
+        <div class="square_black d1" onclick = "run(this)">
+            <img src="king_b.png" alt="">
+        </div>
+        <div class="square_while e1" onclick = "run(this)">
+            <img src="queen_b.png" alt="">
+        </div>
+        <div class="square_black f1" onclick = "run(this)">
+            <img src="bishop_b.png" alt="">
+        </div>
+        <div class="square_while g1" onclick = "run(this)">
+            <img src="horse_b.png" alt="">
+        </div>
+        <div class="square_black h1" onclick = "run(this)">
+            <img src="castle_b.png" alt="">
+        </div>
+        <!-- row 2 -->
+        <div class="square_black a2" onclick = "run(this)">
+            <img src="pawn_b.png" alt="">
+        </div>
+        <div class="square_while b2" onclick = "run(this)">
+            <img src="pawn_b.png" alt="">
+        </div>
+        <div class="square_black c2" onclick = "run(this)">
+            <img src="pawn_b.png" alt="">
+        </div>
+        <div class="square_while d2" onclick = "run(this)">
+            <img src="pawn_b.png" alt="">
+        </div>
+        <div class="square_black e2" onclick = "run(this)">
+            <img src="pawn_b.png" alt="">
+        </div>
+        <div class="square_while f2" onclick = "run(this)">
+            <img src="pawn_b.png" alt="">
+        </div>
+        <div class="square_black g2" onclick = "run(this)">
+            <img src="pawn_b.png" alt="">
+        </div>
+        <div class="square_while h2" onclick = "run(this)">
+            <img src="pawn_b.png" alt="">
+        </div>
+        <!-- row 3 -->
+        <div class="square_while a3" onclick = "run(this)">
+
+        </div>
+        <div class="square_black b3" onclick = "run(this)">
+
+        </div>
+        <div class="square_while c3" onclick = "run(this)">
+
+        </div>
+        <div class="square_black d3" onclick = "run(this)">
+
+        </div>
+        <div class="square_while e3" onclick = "run(this)">
+
+        </div>
+        <div class="square_black f3" onclick = "run(this)">
+
+        </div>
+        <div class="square_while g3" onclick = "run(this)">
+
+        </div>
+        <div class="square_black h3" onclick = "run(this)">
+
+        </div>
+        <!-- row 4 -->
+        <div class="square_black a4" onclick = "run(this)">
+
+        </div>
+        <div class="square_while b4" onclick = "run(this)">
+
+        </div>
+        <div class="square_black c4" onclick = "run(this)">
+
+        </div>
+        <div class="square_while d4" onclick = "run(this)">
+
+        </div>
+        <div class="square_black e4" onclick = "run(this)">
+
+        </div>
+        <div class="square_while f4" onclick = "run(this)">
+
+        </div>
+        <div class="square_black g4" onclick = "run(this)">
+
+        </div>
+        <div class="square_while h4" onclick = "run(this)">
+
+        </div>
+        <!-- row 5 -->
+        <div class="square_while a5" onclick = "run(this)"> 
+
+        </div>
+        <div class="square_black b5" onclick = "run(this)">
+
+        </div>
+        <div class="square_while c5" onclick = "run(this)">
+
+        </div>
+        <div class="square_black d5" onclick = "run(this)">
+
+        </div>
+        <div class="square_while e5" onclick = "run(this)">
+
+        </div>
+        <div class="square_black f5" onclick = "run(this)">
+
+        </div>
+        <div class="square_while g5" onclick = "run(this)">
+
+        </div>
+        <div class="square_black h5" onclick = "run(this)">
+
+        </div>
+        <!-- row 6 -->
+        <div class="square_black a6" onclick = "run(this)">
+
+        </div>
+        <div class="square_while b6" onclick = "run(this)">
+
+        </div>
+        <div class="square_black c6" onclick = "run(this)">
+
+        </div>
+        <div class="square_while d6" onclick = "run(this)">
+
+        </div>
+        <div class="square_black e6" onclick = "run(this)">
+
+        </div>
+        <div class="square_while f6" onclick = "run(this)">
+
+        </div>
+        <div class="square_black g6" onclick = "run(this)">
+
+        </div>
+        <div class="square_while h6" onclick = "run(this)">
+
+        </div>
+        <!-- row 7 -->
+        <div class="square_while a7" onclick="run(this)">
+            <img src="pawn_w.png" alt="" id = "tot">
+        </div>
+        <div class="square_black b7" onclick = "run(this)">
+            <img src="pawn_w.png" alt="">
+        </div>
+        <div class="square_while c7" onclick = "run(this)">
+            <img src="pawn_w.png" alt="">
+        </div>
+        <div class="square_black d7" onclick = "run(this)">
+            <img src="pawn_w.png" alt="">
+        </div>
+        <div class="square_while e7" onclick = "run(this)">
+            <img src="pawn_w.png" alt="">
+        </div>
+        <div class="square_black f7" onclick = "run(this)">
+            <img src="pawn_w.png" alt="">
+        </div>
+        <div class="square_while g7" onclick = "run(this)">
+            <img src="pawn_w.png" alt="">
+        </div>
+        <div class="square_black h7" onclick = "run(this)">
+            <img src="pawn_w.png" alt="">
+        </div>
+        <!-- row 8 -->
+        <div class="square_black a8" onclick = "run(this)">
+            <img src="castle_w.png" alt="">
+        </div>
+        <div class="square_while b8" onclick = "run(this)">
+            <img src="horse_w.png" alt="">
+        </div>
+        <div class="square_black c8" onclick = "run(this)">
+            <img src="bishop_w.png" alt="">
+        </div>
+        <div class="square_while d8" onclick = "run(this)">
+            <img src="king_w.png" alt="">
+        </div>
+        <div class="square_black e8" onclick = "run(this)">
+            <img src="queen_w.png" alt="">
+        </div>
+        
+        <div class="square_while f8" onclick = "run(this)">
+            <img src="bishop_w.png" alt="">
+        </div>
+        <div class="square_black g8" onclick = "run(this)">
+            <img src="horse_w.png" alt="">
+        </div>
+        <div class="square_while h8" onclick = "run(this)">
+            <img src="castle_w.png" alt="">
+            
+        </div>
+       
+    </div>
+</body>
+</html>

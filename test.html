@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+<body>
+
+<span class="classic one"   onclick="someFunction('one')">CLICK HERE</span>
+<span class="classic two"   onclick="someFunction('two')">CLICK HERE</span>
+<span class="classic three" onclick="someFunction('three')">CLICK HERE</span>
+<span class="classic four"  onclick="someFunction('four')">CLICK HERE</span>
+
+
+<script type="text/javascript">
+
+    function someFunction(abc) {
+        alert(abc);
+        alert($(this).attr('class'));
+
+    }
+
+</script>
+</body>
+</html>

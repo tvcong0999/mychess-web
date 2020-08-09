@@ -1,0 +1,23 @@
+.board{
+    width: 720px;
+    height: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.board .square_while{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(236, 228, 216);
+}
+.board .square_black{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(30, 23, 117);
+    
+}
+img{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
